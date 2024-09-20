@@ -25,7 +25,7 @@ public class App implements RequestHandler<APIGatewayProxyRequestEvent, APIGatew
 
         APIGatewayProxyResponseEvent response = new APIGatewayProxyResponseEvent()
                 .withHeaders(headers);
-        String output = "{\"message\": \"Hello World\"}";
+        String output = "{\"message\": \"Hello WORLD\"}";
 
         return response.withStatusCode(200).withBody(output);
     }
